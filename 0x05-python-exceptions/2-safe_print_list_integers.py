@@ -5,7 +5,8 @@ def safe_print_list_integers(my_list=[], x=0):
         try:
             print("{:d}".format(i), end='')
             c += 1
-        except TypeError:
-            break
+        except (TypeError, ValueError):
+            continue
     print()
     return c
+'''Create by adonis7ejeda'''
