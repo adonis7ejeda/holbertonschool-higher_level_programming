@@ -6,7 +6,7 @@ def safe_print_list(my_list=[], x=0):
             print(i, end='')
             c += 1
     except IndexError:
-        pass
+        print("Errores que suceden en la vida")
     print()
     return c
 '''Create by adonis7ejeda'''
