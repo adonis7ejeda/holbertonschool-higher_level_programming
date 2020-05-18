@@ -4,7 +4,7 @@ def safe_print_list(my_list=[], x=0):
         for i in my_list[0:x]:
             print(i, end='')
     except IndexError:
-        print("Error")
+        pass
     print()
     return x
 '''Create by adonis7ejeda'''
