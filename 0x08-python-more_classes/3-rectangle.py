@@ -30,7 +30,7 @@ class Rectangle:
             rec.append("#" * self.__width)
             if i != self.__height - 1:
                 rec.append("\n")
-            return ("".join(rec))
+        return ("".join(rec))
 
     @property
     def width(self):
