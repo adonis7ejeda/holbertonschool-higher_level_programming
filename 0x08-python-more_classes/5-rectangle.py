@@ -1,4 +1,14 @@
 #!/usr/bin/python3
+"""
+class Rectangle that defines a Rectangle
+- width
+- height
+- area
+- perimeter
+- __str__
+"""
+
+
 class Rectangle:
     """
     class Rectangle that defines a Rectangle
