@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Instantiation with width and height: def __init__(self, width, height)
 """
