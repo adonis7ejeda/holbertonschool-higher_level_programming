@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Add a new state"""
+"""Update a state"""
 import sys
 from model_state import Base, State
 
@@ -14,9 +14,7 @@ if __name__ == "__main__":
 
     Session = sessionmaker(bind=engine)
     session = Session()
-    louisiana = State(name='Louisiana')
-    session.add(louisiana)
-    state = session.query(State).filter_by(name='Louisiana').first()
-    print("{}".format(state.id))
+    session.query(State).filter(State.id == 2).update(
+        {State.name: 'New Mexico'}, synchronize_session=False)
     session.commit()
     session.close()
